@@ -1,3 +1,1 @@
-# blog
-
-Blog published at http:blog.tremblay.pro
+Blog published at http://blog.tremblay.pro
