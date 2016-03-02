@@ -1,0 +1,13 @@
+---
+layout: post
+title: Go back in time with Oracle
+date: '2013-08-14T08:01:00.000-07:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2013-08-14T08:01:06.483-07:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-8427857090028485631
+blogger_orig_url: http://blog.tremblay.pro/2013/08/go-back-in-time-with-oracle.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Today, I was needing to change the system date of a Linux server hosting and Oracle database.<br /><br />It seems that Oracle has some king of internal epoch. Restarting the database with a date to far in the past will end into and internal error.<br /><br />In my case, 2000 is the limit. Any date before that and Oracle won't start. Cute.&nbsp;</div>

@@ -1,0 +1,13 @@
+---
+layout: post
+title: Playing with keytool
+date: '2014-02-20T01:32:00.000-08:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2014-02-20T01:37:12.279-08:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-4997353493642183395
+blogger_orig_url: http://blog.tremblay.pro/2014/02/playing-with-keytool.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">It's been a while since I played with certificate in Java. It's usually the kind of thing you do once in your project and never touch again.<br /><br />So I played with the Java keystore. I wanted to do a self-signed Sha256RSA certificate. It feels a bit like coding in perl. You start by something really long like:<br /><br /><pre class="prettyprint sh"><br /># Create the key with openssl<br />openssl req -x509 -nodes -days 365 -newkey rsa:2048 -sha256 -keyout bar.key -out bar.crt<br /><br /># Create a new keystore with a dummy key<br />keytool&nbsp;-genkey&nbsp;-alias&nbsp;foo&nbsp;-keystore&nbsp;keystore.jks<br /><br /># Delete the dummy key<br />keytool&nbsp;-delete&nbsp;-alias&nbsp;foo&nbsp;-keystore&nbsp;keystore.jks<br /><br /># Import the real key<br />keytool -import -alias bar -file bar.crt -keystore keystore.jks<br /></pre><br />to a happy one liner (that also prevent from having to answer a bunch of question and providing a password all the time)<br /><br /><pre class="prettyprint sh"><br /># Generate a self-signed certificate and create the keystore<br />keytool -genkey -keystore keystore.jks -alias bar -dname "CN=octo.com, OU=, O=OCTO, L=Paris, ST=, C=FR"&nbsp;-storepass mypassword -keypass mypassword -keyalg RSA -keysize 2048 -validity 730<br /><br /># Export the certificate (ok, yes, it's a two liner if I want to get back the certificate)<br />keytool -exportcert -keystore keystore.jks -alias bar -file bar.crt -storepass mypassword -keypass mypassword<br /></pre><div><br /></div></div>

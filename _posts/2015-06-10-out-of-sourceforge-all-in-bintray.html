@@ -1,0 +1,14 @@
+---
+layout: post
+title: Out of SourceForge, all in Bintray
+date: '2015-06-10T20:59:00.000-07:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+- Projects
+modified_time: '2015-06-10T20:59:40.960-07:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-6677661377247599616
+blogger_orig_url: http://blog.tremblay.pro/2015/06/out-of-sourceforge-all-in-bintray.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Now that Objenesis is in Bintray. The goal was to also have EasyMock binaries at the same place. They were hosted on SourceForge. And as you might have read, <span id="goog_441751562"></span>SourceForge<span id="goog_441751563"></span> is <a href="http://www.howtogeek.com/218764/warning-don%E2%80%99t-download-software-from-sourceforge-if-you-can-help-it/" rel="nofollow" target="_blank">now on the dark side</a>&nbsp;so going out of there was becoming a priority.<br /><br />This time it was easier. I basically made a list of versions and release dates.<br /><br />And then I made a loop around the lines to the<br /><br /><ul style="text-align: left;"><li>wget to get the binary and store it keeping the SourceForge structure</li><li>curl to create the version in Bintray</li><li>curl to upload the binary</li></ul>I've manually added the release notes in GitHub but wasn't able to figure out how to push them to Bintray. If someone knows, please tell me.<br /><br />To be helpful, here is the loop that I used to create the versions.<br /></div><pre class="prettyprint java"><br />API_KEY=xxx<br />PASSPHRASE=xxx<br /><br /># This is because I want the file upside down to create the older versions first<br />tail -r $1 &gt; tmp.tsv<br /><br />while read p; do<br />  version=$(echo "$p" | cut -d' ' -f1)<br />  date=$(echo "$p" | cut -d' ' -f2) <br />  <br />  version=${version// /-}<br /><br />  echo $version $date<br />  <br />  content="{ \"name\": \"$version\", \"desc\": \"$version\", \"released\": \"${date}T00:00:00.000Z\", \"github_use_tag_release_notes\": false, \"vcs_tag\": \"$version\" }"<br />  echo "$content"<br />  <br />  curl -v -XPOST -H "Content-Type: application/json" -H "X-GPG-PASSPHRASE: ${PASSPHRASE}" -uhenri-tremblay:${API_KEY} \<br /> -d "$content" \<br />    https://api.bintray.com/packages/easymock/distributions/easymock/versions<br /><br />done &lt;tmp.tsv<br /></pre>

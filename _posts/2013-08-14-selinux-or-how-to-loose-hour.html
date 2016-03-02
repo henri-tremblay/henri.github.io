@@ -1,0 +1,13 @@
+---
+layout: post
+title: SELinux or how to loose an hour
+date: '2013-08-14T14:05:00.002-07:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2013-08-16T17:13:41.113-07:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-822633072103600547
+blogger_orig_url: http://blog.tremblay.pro/2013/08/selinux-or-how-to-loose-hour.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="background-color: white; font-size: 12px; line-height: 16px; white-space: pre;"><span style="font-family: inherit;">If your on RedHat (but it seems it can occur on any Linux) and you get a "Permission denied" coming out of nowhere. You did </span><span style="font-family: Courier New, Courier, monospace;">chmod -R 777 </span><span style="font-family: inherit;">/ and still get the issue, then you probably met <a href="http://en.wikipedia.org/wiki/Security-Enhanced_Linux" rel="nofollow" target="_blank">SELinux</a>. It's security above the usual security.</span></span><br /><span style="background-color: white; font-size: 12px; line-height: 16px; white-space: pre;"><span style="font-family: inherit;"><br /></span></span><span style="background-color: white; font-size: 12px; line-height: 16px; white-space: pre;"><span style="font-family: inherit;">To desactivate it temporarily just to check it's really your current issue, do</span></span><br /><span style="background-color: white; font-family: Consolas, 'Liberation Mono', Courier, monospace; font-size: 12px; line-height: 16px; white-space: pre;"><br /></span><span style="font-family: Courier New, Courier, monospace;"><span style="background-color: white; font-size: 12px; line-height: 16px; white-space: pre;">sudo sudo sh -c </span><span class="s1" style="background-color: white; color: #dd1144; font-size: 12px; line-height: 16px; white-space: pre;">'echo 0 &gt; /selinux/enforce'</span></span><br /><span style="font-family: Courier New, Courier, monospace;"><span class="s1" style="background-color: white; color: #dd1144; font-size: 12px; line-height: 16px; white-space: pre;"><br /></span></span></div>

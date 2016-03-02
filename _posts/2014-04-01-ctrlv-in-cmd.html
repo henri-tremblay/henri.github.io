@@ -1,0 +1,13 @@
+---
+layout: post
+title: Ctrl+V in cmd
+date: '2014-04-01T15:21:00.001-07:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2014-04-02T12:48:24.623-07:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-2305452918816828571
+blogger_orig_url: http://blog.tremblay.pro/2014/04/ctrlv-in-cmd.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">I've been using this for a while in fact but thought it was useful enough to be told.<br /><br />A really annoying thing on Windows is that you can't Ctrl+V in a cmd. You can anywhere else but not there.<br /><br />A nice piece of software named <a href="http://ahkscript.org/" target="_blank">AutoHotkey</a>&nbsp;can solve this. It allows you to script (in a strange language sadly) hot keys anywhere in Windows.<br /><br />For Ctrl+V, the following script does the trick:<br /><br /><pre class="prettyprint sh">#IfWinActive ahk_class ConsoleWindowClass<br />^V::<br />SendInput {Raw}%clipboard%<br />return<br />#IfWinActive<br /></pre><div><br /><b>UPDATE:</b> In fact <span style="font-family: Courier New, Courier, monospace;">SendIput </span>has encoding issue. So I'm now using&nbsp;<span style="background-color: white; color: #222222; font-size: 12.800000190734863px;"><span style="font-family: Courier New, Courier, monospace;">Send !{Space}ep</span></span><span style="background-color: white; color: #222222; font-family: arial, sans-serif; font-size: 12.800000190734863px;"> which simulate an access to the system menu and then select the paste by typing 'e' and 'p'. Not that is works in English. You might have to change the letters to fit your OS language.</span></div></div>

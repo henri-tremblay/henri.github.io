@@ -1,0 +1,13 @@
+---
+layout: post
+title: Provision Vagrant with a shell
+date: '2014-01-14T12:00:00.000-08:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2014-01-14T12:00:07.048-08:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-5728584605976104530
+blogger_orig_url: http://blog.tremblay.pro/2014/01/provision-vagrant-with-shell.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">To allow everyone to be able to replicate the <a href="https://github.com/henri-tremblay/couch-bench" target="_blank">benchmark </a>from my <a href="http://henritremblay.blogspot.fr/2014/01/the-art-of-benchmarking.html" target="_blank">previous post</a>, I've played with <a href="http://www.vagrantup.com/" target="_blank">Vagrant </a>to be able to provide correctly configured virtual machines.<br /><br />I ended up provisioning two virtual machines in a single Vagrant file using shell provisioning.<br /><br />I learned loads of unexpected things doing so that you will see in the <a href="https://github.com/henri-tremblay/couch-bench/blob/master/vm/injector.sh" target="_blank">shell</a> <a href="https://github.com/henri-tremblay/couch-bench/blob/master/vm/server.sh" target="_blank">files</a>&nbsp;and the <a href="https://github.com/henri-tremblay/couch-bench/blob/master/vm/Vagrantfile" target="_blank">Vagrant file</a>.<br /><br /><ul style="text-align: left;"><li>How to do a dist-upgrade bypassing the interactive questions about grub</li><li>How to install the lastest NodeJS</li><li>How to provision using the vagrant instead of the root user (:privileged =&gt; false)</li><li>How to specify the number of CPUs used by the VM</li><li>How to setup a private network with Vagrant</li></ul>And that provisioning a Vagrant VM takes quite a long time (especially the dist-upgrade). My two VMs are 75% the same. It would be nice to be able to create a base VM that forks into the two final VMs.<br /><br />Is there a way to do that apart from scripting to create a new box?<br /><br /></div>

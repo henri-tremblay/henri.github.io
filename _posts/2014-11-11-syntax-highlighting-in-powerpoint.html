@@ -1,0 +1,13 @@
+---
+layout: post
+title: Syntax highlighting in PowerPoint
+date: '2014-11-11T08:41:00.001-08:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2014-11-18T07:50:09.402-08:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-5569995734434688951
+blogger_orig_url: http://blog.tremblay.pro/2014/11/syntax-highlighting-in-powerpoint.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Today I was wanting to copy some code in a PowerPoint presentation (yes, I still think PowerPoint is the best presentation tool there is).<br /><br />On Windows, it's pretty easy. I used to use Notepad++ to copy the text including the highlighting and job done.<br /><br />On a Mac, it seems a bit more complicated. There seem to be some IntelliJ plugins but I had no luck with them.<br /><br />I ended up using a neat trick. It's not great but at least it works. One of the main drawback is that it always copy the entire file. And Powerpoint seems to have a bug. When you copy something that is larger than the slide, you don't get to have the "Keep source formatting" option.<br /><br />Anyway, it's cumbersome but it works.<br /><br />First you need pygments. Which is installed using pip<br /><span style="font-family: Courier New, Courier, monospace;">sudo easy_install pip</span><br /><span style="font-family: Courier New, Courier, monospace;">sudo pip install pygments</span><br /><br />Then you can do that:<br /><br /><span style="font-family: Courier New, Courier, monospace;">pygmentize -f rtf Allo.java | pbcopy</span><br /><br />It will highlight the file and put it in the clipboard. Tadam!<br /><br />But I'm still open to any answer that is simpler than that...<br /><br />UPDATE: It seems that the IntelliJ plugin <i>'Copy' on steroid</i> is now working on my machine. It just magically copy as RTF text. Really useful&nbsp;</div>

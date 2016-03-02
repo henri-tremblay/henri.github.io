@@ -1,0 +1,13 @@
+---
+layout: post
+title: Jekyll on Windows
+date: '2013-10-06T04:27:00.000-07:00'
+author: Henri Tremblay
+tags:
+- What I learned today
+modified_time: '2013-10-06T04:27:14.428-07:00'
+blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-8272944713225052085
+blogger_orig_url: http://blog.tremblay.pro/2013/10/jekyll-on-windows.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on">Jekyll used to simply not work on Windows. Now it does.<br /><br />I'm using&nbsp;<span style="font-family: Courier New, Courier, monospace;">ruby 2.0.0p195</span> and&nbsp;<span style="font-family: Courier New, Courier, monospace;">jekyll 1.2.1</span> in case it might help anyone. On Windows 8.<br /><br />But when trying to serve a website (jekyll serve), you will probably get<br /><br /><span style="font-family: Courier New, Courier, monospace;">Conversion error: There was an error converting '_posts/2013-06-05-my-files.md.</span><br /><span style="font-family: Courier New, Courier, monospace;"><br /></span><span style="font-family: Courier New, Courier, monospace;">error: incompatible character encodings: CP850 and UTF-8. Use --trace to view backtrace</span><br /><br />The solution is to do a&nbsp;<span style="font-family: Courier New, Courier, monospace;">chcp 65001</span> (information I miraculously found <a href="http://traz.github.io/post/2013/Bootstrap3-preview/" target="_blank">here</a>).<br /><br />Like magic, it will start to work.<br /><br /></div>
