@@ -2,9 +2,9 @@
 permalink:           pretty
 
 # Setup
-title:               Poole
+title:               Henri's Mind
 tagline:             The Jekyll Butler
-url:                 http://getpoole.com
+url:                 http://blog.tremblay.pro
 paginate:            1
 baseurl:             ""
 
@@ -17,14 +17,14 @@ sass:
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name:              Henri Tremblay
+  url:               https://twitter.com/henri_tremblay
+  email:             henri@tremblay.pro
 
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/poole/poole
+  repo:              https://github.com/henri-tremblay/blog.git
 
 # Gems
 gems:
