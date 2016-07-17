@@ -14,3 +14,4 @@ You should have a look.
 * [Heinz Kabutz](http://www.javaspecialists.eu)
 * [jClarity](https://www.jclarity.com)
 * [Gatling](http://gatling.io)
+* [Vincent Massol](http://massol.myxwiki.org)
