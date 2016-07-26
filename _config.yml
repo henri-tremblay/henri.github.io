@@ -18,6 +18,9 @@ author:
   url:               https://twitter.com/henri_tremblay
   email:             henri@tremblay.pro
 
+# Do not build vendor pages (https://github.com/jekyll/jekyll/issues/2938)
+exclude: [vendor]
+
 # Custom vars
 version:             2.0.0
 github:
