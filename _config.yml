@@ -24,7 +24,7 @@ exclude: [vendor]
 # Custom vars
 version:             2.0.0
 github:
-  repo:              https://github.com/henri-tremblay/blog.git
+  repo:              https://github.com/henri-tremblay/henri-tremblay.github.io.git
 
 # Gems
 gems:
