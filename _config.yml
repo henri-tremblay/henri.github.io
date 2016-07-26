@@ -19,7 +19,8 @@ author:
   email:             henri@tremblay.pro
 
 # Do not build vendor pages (https://github.com/jekyll/jekyll/issues/2938)
-exclude: [vendor]
+# Exclude build stuff
+exclude: [vendor, Gemfile, Gemfile.lock, Gruntfile.js, package.json, README.md]
 
 # Custom vars
 version:             2.0.0
