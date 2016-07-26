@@ -11,4 +11,32 @@ blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-49369332012949292
 blogger_orig_url: http://blog.tremblay.pro/2013/09/reload-google-app-engine-web-app.html
 ---
 
-<div dir="ltr" style="text-align: left;" trbidi="on">Google provides a really nice plugin to work with Google App Engine in Eclipse.<br /><br />Strangely, there is no obvious way to reload the web app when the code is modified. This is kind of odd because it's the kind of feature everyone would need.<br /><br />The trick to allow a reload is to touch the<span style="font-family: Courier New, Courier, monospace;">&nbsp;appengine-web.xml</span> file.<br /><br />On Linux, you can, of course, use <span style="font-family: Courier New, Courier, monospace;">touch</span>. On Windows, <span style="font-family: Courier New, Courier, monospace;">touch </span>doesn't exist but can call this really obvious command from the <span style="font-family: Courier New, Courier, monospace;">WEB-INF</span> directory. It needs to be called from the parent directory of the file. Not path allowed it seems.<br /><br />The best way I've found so far is to add an external tool.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-G79J-zeZCyQ/UkcFB6Cpz9I/AAAAAAAAARQ/VU4lKLgPv8Y/s1600/external.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="396" src="http://1.bp.blogspot.com/-G79J-zeZCyQ/UkcFB6Cpz9I/AAAAAAAAARQ/VU4lKLgPv8Y/s400/external.png" width="400" /></a></div><div class="separator" style="clear: both; text-align: center;"><br /></div><div class="separator" style="clear: both; text-align: left;">I would also suggest to go in the Common tab to add it to your favorite tools and to have it as a shared file so you can make it accessible to all your team.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">I also tried to add the tool as a builder of the project to make it auto-reload. It didn't work.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">If anybody has a better solution, I'm listening.</div><br /></div>
+<div dir="ltr" style="text-align: left;" trbidi="on">Google provides a really nice plugin to work with Google App Engine
+  in Eclipse.<br/><br/>Strangely, there is no obvious way to reload the web app when the code is modified. This is kind
+  of odd because it's the kind of feature everyone would need.<br/><br/>The trick to allow a reload is to touch the<span
+    style="font-family: Courier New, Courier, monospace;">&nbsp;appengine-web.xml</span> file.<br/><br/>On Linux, you
+  can, of course, use <span style="font-family: Courier New, Courier, monospace;">touch</span>. On Windows, <span
+    style="font-family: Courier New, Courier, monospace;">touch </span>doesn't exist but can call this really obvious
+  command from the <span style="font-family: Courier New, Courier, monospace;">WEB-INF</span> directory. It needs to be
+  called from the parent directory of the file. Not path allowed it seems.<br/><br/>The best way I've found so far is to
+  add an external tool.<br/>
+  ID: {{page.id}}<br/>
+  PATH: {{page.path}}<br/>
+  URL: {{page.url}}<br/>
+  <br/>
+  <div class="separator" style="clear: both; text-align: center;"><a
+    href="{{site.baseurl}}public/images{{page.url}}external.png" imageanchor="1"
+    style="margin-left: 1em; margin-right: 1em;"><img border="0" height="396"
+                                                      src="{{site.baseurl}}public/images{{page.url}}external-small.png"
+                                                      width="400"/></a>
+  <div class="separator" style="clear: both; text-align: center;"><br/></div>
+  <div class="separator" style="clear: both; text-align: left;">I would also suggest to go in the Common tab to add it
+    to your favorite tools and to have it as a shared file so you can make it accessible to all your team.
+  </div>
+  <div class="separator" style="clear: both; text-align: left;"><br/></div>
+  <div class="separator" style="clear: both; text-align: left;">I also tried to add the tool as a builder of the project
+    to make it auto-reload. It didn't work.
+  </div>
+  <div class="separator" style="clear: both; text-align: left;"><br/></div>
+  <div class="separator" style="clear: both; text-align: left;">If anybody has a better solution, I'm listening.</div>
+  <br/></div>
