@@ -30,7 +30,7 @@ One keyboard was used at home, one at work. I swapped them after 4 years because
 see in the picture.
 
 <a href="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}keyboard.jpg">
-  <img src="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}keyboard.jpg" alt="Keyboard/>
+  <img src="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}keyboard.jpg" alt="Keyboard"/>
 </a>
 
 Both are now in the same state. After 7 years I bought two new ones. Sadly, the quality was not the same. The keys were 
