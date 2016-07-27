@@ -57,12 +57,12 @@ automation. Bintray was easy to use so I went for Bintray only. Be aware, the wa
 
 1. Make a list of all the binaries to migrate
   * Get them with `wget https://objenesis.googlecode.com/files/objenesis-xxx.zip`
-2. Create an [organisation](https://bintray.com/easymock), a [distribution repository](https://bintray.com/easymock/distributions") and 
+2. Create an [organisation](https://bintray.com/easymock), a [distribution repository](https://bintray.com/easymock/distributions) and 
   an [objenesis package])(https://bintray.com/easymock/distributions/objenesis) in Bintray
 3. Add my GPG key to my Bintray account
 4. Upload everything using REST (`curl -T objenesis-xxx.zip -H "X-GPG-PASSPHRASE: ${PASSPHRASE}" -uhenri-tremblay:${API_KEY} https://api.bintray.com/content/easymock/distributions/objenesis/xxx/objenesis-xxx-bin.zip?publish=1`)
 
-It works, the only drawback is that no release notes are provided. They've always been on the [website](http://objenesis.org/notes.html")
+It works, the only drawback is that no release notes are provided. They've always been on the [website](http://objenesis.org/notes.html)
 
 ## Project moved
 
