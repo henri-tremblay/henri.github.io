@@ -1,31 +1,35 @@
 # Dependencies
-highlighter:      rouge
+highlighter: rouge
+
+# Required for backtick highlighting to work in local with jekyll 3.0.3
+kramdown:
+  input: GFM
 
 # Permalinks
-permalink:           pretty
+permalink: pretty
 
 # Setup
-title:               Henri's Mind
-tagline:             My thoughts on the world and some useful things I learn daily
-url:                 http://blog.tremblay.pro
-paginate:            5
-baseurl:             "/"
-analytics_id:        UA-75727912-1
+title: Henri's Mind
+tagline: My thoughts on the world and some useful things I learn daily
+url: http://blog.tremblay.pro
+paginate: 10
+baseurl: "/"
+analytics_id: UA-75727912-1
 
 # About/contact
 author:
-  name:              Henri Tremblay
-  url:               https://twitter.com/henri_tremblay
-  email:             henri@tremblay.pro
+  name: Henri Tremblay
+  url: https://twitter.com/henri_tremblay
+  email: henri@tremblay.pro
 
 # Do not build vendor pages (https://github.com/jekyll/jekyll/issues/2938)
 # Exclude build stuff
 exclude: [vendor, Gemfile, Gemfile.lock, Gruntfile.js, package.json, README.md]
 
 # Custom vars
-version:             2.0.0
+version: 2.0.0
 github:
-  repo:              https://github.com/henri-tremblay/henri-tremblay.github.io.git
+  repo: https://github.com/henri-tremblay/henri-tremblay.github.io.git
 
 # Gems
 gems:
