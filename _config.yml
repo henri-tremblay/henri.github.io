@@ -6,7 +6,7 @@ kramdown:
   input: GFM
 
 # Permalinks
-permalink: pretty
+permalink: /:year/:month/:title.html
 
 # Setup
 title: Henri's Mind
