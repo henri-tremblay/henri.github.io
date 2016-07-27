@@ -4,6 +4,7 @@ highlighter: rouge
 # Required for backtick highlighting to work in local with jekyll 3.0.3
 kramdown:
   input: GFM
+  hard_wrap: false
 
 # Permalinks
 permalink: /:year/:month/:title.html
