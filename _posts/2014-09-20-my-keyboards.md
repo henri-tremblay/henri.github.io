@@ -26,11 +26,11 @@ However, there is one thing I've always refused to adapt to, it's the AZERTY key
 Since I knew all this, I came to France with two Canadian French keyboards. The best keyboard to code is the English-US. 
 But if you also want to write in French, the Canadian French layout is the best compromise.
 
-One keyboard was used at home, one at work. I swapped them after 4 years because the work one was too used as you will see
-in the picture.
+One keyboard was used at home, one at work. I swapped them after 4 years because the work one was too used as you will 
+see in the picture.
 
-<a href="{{site.baseurl}}public/images{{page.url}}keyboard.jpg">
-  <img src="{{site.baseurl}}public/images{{page.url}}keyboard.jpg" alt="Keyboard/>
+<a href="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}keyboard.jpg">
+  <img src="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}keyboard.jpg" alt="Keyboard/>
 </a>
 
 Both are now in the same state. After 7 years I bought two new ones. Sadly, the quality was not the same. The keys were 

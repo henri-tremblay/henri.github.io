@@ -25,8 +25,8 @@ It needs to be called from the `WEB-INF` directory. Not path allowed here it see
 
 The best way I've found so far to use it is to add an external tool.
 
-<a href="{{site.baseurl}}public/images{{page.url}}external.png" style="margin-left: 1em; margin-right: 1em;">
-  <img border="0" height="396" alt="External tools" src="{{site.baseurl}}public/images{{page.url}}external-small.png" width="400"/>
+<a href="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}external.png">
+  <img alt="External tools" src="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}external-small.png"/>
 </a>
 
 I would also suggest to go to the Common tab to add it to your favorite tools and to have it as a shared file so you 
