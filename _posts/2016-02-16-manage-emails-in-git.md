@@ -21,6 +21,7 @@ after each `git init` or `git clone`.
 
 I finally had the time for work on an almost satisfying solution.
 <!--more-->
+
 First, there is a concept of git template. It means that your `.git` directory will be initialized with files coming from
 a template. By default, it uses the default template `$GIT_INSTALL_DIR/share/git-core/templates`.
 

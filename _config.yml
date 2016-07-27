@@ -9,6 +9,9 @@ kramdown:
 # Permalinks
 permalink: /:year/:month/:title.html
 
+# To have nice summaries on the first page
+excerpt_separator: <!--more-->
+
 # Setup
 title: Henri's Mind
 tagline: My thoughts on the world and some useful things I learn daily
