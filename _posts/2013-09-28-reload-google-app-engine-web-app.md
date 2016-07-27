@@ -6,7 +6,6 @@ author: Henri Tremblay
 tags:
 - What I learned today
 modified_time: '2013-09-28T09:38:03.051-07:00'
-thumbnail: http://1.bp.blogspot.com/-G79J-zeZCyQ/UkcFB6Cpz9I/AAAAAAAAARQ/VU4lKLgPv8Y/s72-c/external.png
 blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-4936933201294929281
 blogger_orig_url: http://blog.tremblay.pro/2013/09/reload-google-app-engine-web-app.html
 ---

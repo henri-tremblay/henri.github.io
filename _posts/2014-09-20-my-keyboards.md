@@ -6,7 +6,6 @@ author: Henri Tremblay
 tags:
 - Stories
 modified_time: '2015-03-04T19:24:51.167-08:00'
-thumbnail: http://3.bp.blogspot.com/-fY2VxprSWRM/VB3K6B6UW7I/AAAAAAAACtw/_WQQwYuMRQo/s72-c/IMAG0139.jpg
 blogger_id: tag:blogger.com,1999:blog-8282654404214414992.post-6200334583868181768
 blogger_orig_url: http://blog.tremblay.pro/2014/09/my-keyboards.html
 ---
