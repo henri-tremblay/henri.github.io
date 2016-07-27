@@ -34,4 +34,4 @@ can make it accessible to all your team.
 
 I also tried to add the tool as a builder of the project to make it auto-reload. It didn't work.
 
-If anybody has a better solution, [I'm listening]({{site.baseurl}}about).
+If anybody has a better solution, [I'm listening]({{site.baseurl}}about.html).
