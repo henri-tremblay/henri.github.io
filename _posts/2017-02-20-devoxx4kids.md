@@ -47,6 +47,6 @@ Then my personal list (I haven't tried everything. It's just a list of cool stuf
 
 * [littleBits](http://littlebits.cc): Really cool bricks to build electronic systems
 * [Makey Makey](http://www.makeymakey.com): Fun chipset and electrodes to interact with the computer using everyday objects
-* [mBot](http://www.makeblock.com/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
+* [mBot](http://www.makeblock.cc/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
 * [MakerBloks](https://makerbloks.com): Other really cool bricks to build electronic systems
 * [Arduino](https://www.arduino.cc): A full-fledged electronic board to play with
