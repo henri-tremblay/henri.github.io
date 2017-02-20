@@ -22,6 +22,10 @@ Anyway, all this is not the theme of this post :-)
 This is a post that will evolve in time where I want to put all the cool learning tools I've encountered. And try to comment on them. 
 This is mostly a selfish post that will prevent me from forgetting things. But you might found it useful. So here we go.
 
+First, the [official Devoxx4kids material](https://github.com/devoxx4kids/materials/tree/master/workshops).
+
+Then my personal list (I haven't tried everything. It's just a list of cool stuff for me to remember).
+
 # Games
 
 * [Robot Turtles](http://www.robotturtles.com): A board game teaching young children how to program without having them notice
