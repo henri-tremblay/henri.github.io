@@ -100,7 +100,7 @@ public void volatileArrayField() {
 }
 ```
 
-**Does it work:** Yes
+**Does it work:** No
 
 Data visibility of array elements is not guaranteed. Elements of a volatile array are not volatile. Yes, it is non-intuitive.
 
