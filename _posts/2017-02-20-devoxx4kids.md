@@ -29,7 +29,7 @@ Then my personal list (I haven't tried everything. It's just a list of cool stuf
 # Games
 
 * [Robot Turtles](http://www.robotturtles.com): A board game teaching young children how to program without having them notice
-* [The Bugs](https://magiksquare.fr): Another board game teaching young children how to program without having them notice
+* [The Bugs](https://www.youtube.com/channel/UCgQKh3j5uA_i5gXrNp8SHzA): Another board game teaching young children how to program without having them notice (note that Magik Square official website seems dead)
 * [RetroPie](https://retropie.org.uk): To play old games on a Raspberry Pi
 
 # Programming
