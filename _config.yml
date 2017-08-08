@@ -36,7 +36,7 @@ github:
   repo: https://github.com/henri-tremblay/henri-tremblay.github.io.git
 
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
   - jemoji
