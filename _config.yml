@@ -17,7 +17,7 @@ title: Henri's Mind
 tagline: My thoughts on the world and some useful things I learn daily
 url: http://blog.tremblay.pro
 paginate: 10
-baseurl: "/"
+baseurl:
 analytics_id: UA-75727912-1
 
 # About/contact

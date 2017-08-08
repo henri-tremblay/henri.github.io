@@ -24,8 +24,8 @@ It needs to be called from the `WEB-INF` directory. Not path allowed here it see
 
 The best way I've found so far to use it is to add an external tool.
 
-<a href="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}external.png">
-  <img alt="External tools" src="{{site.baseurl}}public/images{{page.url | replace:'.html','/'}}external-small.png"/>
+<a href="{{site.baseurl}}/public/images{{page.url | replace:'.html','/'}}external.png">
+  <img alt="External tools" src="{{site.baseurl}}/public/images{{page.url | replace:'.html','/'}}external-small.png"/>
 </a>
 
 I would also suggest to go to the Common tab to add it to your favorite tools and to have it as a shared file so you 
@@ -33,4 +33,4 @@ can make it accessible to all your team.
 
 I also tried to add the tool as a builder of the project to make it auto-reload. It didn't work.
 
-If anybody has a better solution, [I'm listening]({{site.baseurl}}about.html).
+If anybody has a better solution, [I'm listening]({{site.baseurl}}/about.html).
