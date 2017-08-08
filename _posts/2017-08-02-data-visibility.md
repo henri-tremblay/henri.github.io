@@ -23,7 +23,7 @@ My goal was to give really simple examples of what works or not. The final code 
 
 But I will still describe it here. It's based on the concept of "Will the thread ever get out of the loop?". All the examples are almost identical.
 
-```
+{% highlight java %}
 @Test
 public void test() {
     new Thread(() -> {
@@ -32,7 +32,7 @@ public void test() {
     }).start();
     field = true;
 }
-```
+{% endhighlight %}
 
 1. A thread is started
 2. It loops until a field is flipped to `true`
@@ -46,7 +46,7 @@ I recommend that you first guess the result before looking at the answer.
 
 The first example is a normal field (no final or volatile) without any kind of synchronization.
 
-```
+{% highlight java %}
 private boolean stopNormalField;
 
 @Test
@@ -57,7 +57,7 @@ public void normalField() {
     }).start();
     stopNormalField = true;
 }
-```
+{% endhighlight %}
 
 **Does it work:** No
 
@@ -65,7 +65,7 @@ Data visibility to another thread is not guaranteed by a normal field. The child
 
 Now, let's turn it to a `volatile` field.
 
-```
+{% highlight java %}
 private volatile boolean stopVolatileField;
 
 @Test
@@ -76,7 +76,7 @@ public void volatileField() {
     }).start();
     stopVolatileField = true;
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
@@ -87,7 +87,7 @@ So far so good.
 
 What about a volatile array?
 
-```
+{% highlight java %}
 private volatile boolean[] stopArrayField = new boolean[1];
 
 @Test
@@ -98,7 +98,7 @@ public void volatileArrayField() {
     }).start();
     stopArrayField[0] = true;
 }
-```
+{% endhighlight %}
 
 **Does it work:** No
 
@@ -106,7 +106,7 @@ Data visibility of array elements is not guaranteed. Elements of a volatile arra
 
 Let's now start with higher abstraction from `java.util.concurrent` (JUC). First, an atomic field.
 
-```
+{% highlight java %}
 private AtomicBoolean stopAtomicField;
 
 @Test
@@ -118,7 +118,7 @@ public void atomicField() {
     }).start();
     stopAtomicField.set(true);
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
@@ -128,7 +128,7 @@ the thread. The JVM makes sure a starting thread will see everything that *happe
 
 Now. What about synchronization?
 
-```
+{% highlight java %}
 @Test
 public void synchronizedField() {
     new Thread(() -> {
@@ -145,7 +145,7 @@ public void synchronizedField() {
         stopNormalField = true;
     }
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
@@ -154,7 +154,7 @@ important.
 
 For instance, not synchronizing on the same mutex means all bets are off.
 
-```
+{% highlight java %}
 @Test
 public void synchronizedOnDifferentMutexField() {
     new Thread(() -> {
@@ -171,14 +171,14 @@ public void synchronizedOnDifferentMutexField() {
         stopNormalField = true;
     }
 }
-```
+{% endhighlight %}
 
 **Does it work:** No
 
 By the way, watch out for lambda and inner classes. They don't have the same `this`. For a lambda, `this` is the class where the lambda is 
 defined. For an inner class, it is the inner class.
 
-```
+{% highlight java %}
 @Test
 public void synchronizedInnerClassField() {
     new Thread(new Runnable() {
@@ -198,13 +198,13 @@ public void synchronizedInnerClassField() {
         stopNormalField = true;
     }
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
 Synchronization works. Fair enough. But can I use a lock? I was told locks are better than synchronization.
 
-```
+{% highlight java %}
 private Lock lock = new ReentrantLock();
 
 @Test
@@ -229,7 +229,7 @@ public void lockField() {
         lock.unlock();
     }
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
@@ -238,7 +238,7 @@ Locking provides the same data visibility as synchronizing.
 In fact, all JUCs are providing the necessary memory barriers to get the correct visibility. Below, `countDown` and `await` will make sure 
 the child thread sees the world correctly.
 
-```
+{% highlight java %}
 @Test
 public void latchField() {
     CountDownLatch latch = new CountDownLatch(1);
@@ -254,7 +254,7 @@ public void latchField() {
     stopNormalField = true;
     latch.countDown();
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
@@ -264,7 +264,7 @@ is always a bit frightening.
 OK. We will finish this post with the *Don't do this at home* example. It means it is trickier to get right and you won't need it for business 
 as usual.
 
-```
+{% highlight java %}
 @Test
 public void mutexField() {
     new Thread(() -> {
@@ -275,7 +275,7 @@ public void mutexField() {
     stopNormalField = true;
     stopVolatileField = true;
 }
-```
+{% endhighlight %}
 
 **Does it work:** Yes
 
