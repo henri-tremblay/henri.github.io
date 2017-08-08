@@ -4,7 +4,7 @@ Blog published at http://blog.tremblay.pro
 
 ```
 bundle install
-bundle exec jekyll -w
+bundle exec jekyll server -w
 ```
 
 ## Run htmlproofer

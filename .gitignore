@@ -41,3 +41,7 @@ w3cErrors
 
 # Folders to ignore
 node_modules
+
+# Ruby stuff
+.bundle/
+
