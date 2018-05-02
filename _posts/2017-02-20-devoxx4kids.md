@@ -31,22 +31,36 @@ Then my personal list (I haven't tried everything. It's just a list of cool stuf
 * [Robot Turtles](http://www.robotturtles.com): A board game teaching young children how to program without having them notice
 * [The Bugs](https://www.youtube.com/channel/UCgQKh3j5uA_i5gXrNp8SHzA): Another board game teaching young children how to program without having them notice (note that Magik Square official website seems dead)
 * [RetroPie](https://retropie.org.uk): To play old games on a Raspberry Pi
+* [Minecraft](https://minecraft.net/en-us): Building, creating and programming worlds
+
+# Robots
+
+* [Blue-Bot](https://www.bee-bot.us/bluebot.html): A cute mouse that can be programmed directly or from a tablet to follow a path
+* [Code & Go Robot mouse](https://www.learningresources.com/product/learning+essentials--8482-+stem+robot+mouse+coding+activity+set.do): Similar to Blue-Bot but comes with tiles and obstacles. The mouse can't be programmed from a tablet. There are cards to tell the path and it recognizes a cheese at the end. Pretty fun
+* [mBot](http://www.makeblock.cc/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
 
 # Programming
 
 * [Greenfoot](http://www.greenfoot.org): To program easily little games in Java
 * [Scratch](https://scratch.mit.edu): Visual programming games by drag & dropping
+* [Scratch jr](https://www.scratchjr.org): Same a Scratch but for younger kids
+* [Code Combat](https://codecombat.com): A nice game where you learn how to code along the levels
 
 # Construction
 
 * [LEGO Mindstroms](https://www.lego.com/en-us/mindstorms): Lego with captors and engines that you can problem using their interface. Quite complex to create models 
-* [LEGO WeDo](https://education.lego.com/en-us/products/lego-education-wedo-construction-set/9580): Like Mindstorms but simpler and for younger kids. The interface is also less buggy
-* [LEGO Boost](https://www.lego.com/en-us/boost): Available in August 2017. Seems to be an improved version of WeDo.
+* [LEGO WeDo](https://education.lego.com/en-us/products/lego-education-wedo-construction-set/9580): Like Mindstorms but simpler and for younger kids. They a quick to build and oriented for science workshops
+* [LEGO Boost](https://www.lego.com/en-us/boost): A bit like WeDo but for home. Boost is long to assemble and then offers many programming possibilities  
+
+# Computers
+
+* [Raspberry Pi](https://www.raspberrypi.org): A really powerful mini-computer which boots on Linux and can do electronics
+* [Arduino](https://www.arduino.cc/): A little micro-controller that can be easily programmed to do many things
 
 # Electronics 
 
 * [littleBits](http://littlebits.cc): Really cool bricks to build electronic systems
 * [Makey Makey](http://www.makeymakey.com): Fun chipset and electrodes to interact with the computer using everyday objects
-* [mBot](http://www.makeblock.cc/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
 * [MakerBloks](https://makerbloks.com): Other really cool bricks to build electronic systems
 * [Arduino](https://www.arduino.cc): A full-fledged electronic board to play with
+* [FreeNove](http://www.freenove.com): Multiple electronic kits with straightforward explanations
