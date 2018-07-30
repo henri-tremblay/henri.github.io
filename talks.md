@@ -7,15 +7,18 @@ The talks I've made along the years.
 
 ## 2018
 
+* 2018-07-23 - Unconference - [JCrete](http://www.jcrete.org/) - Crete, Greece
+* 2018-06-21 - Learn Java 8: Lambdas and Functional Programming - [Oracle Code Brasil](https://www.oracle.com/br/openworld/programs/oracle-code.html) - Sao Paulo, Brasil
 * 2018-03-08 - Être pragmatique - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2018-03-07 - Daddy, I want to deploy in the cloud - [Confoo](https://confoo.ca) - Montréal, Canada
-* 2018-01-12 - Be pragmatic - [NetBeans Day](https://www.dawsoncollege.qc.ca/netbeansday/) - Montréal, Canada
 * 2018-02-23 - Learn Java 8: Lambdas and Functional Programming - [DevNexus](https://devnexus.com/) - Atlanta, USA
+* 2018-01-12 - Be pragmatic - [NetBeans Day](https://www.dawsoncollege.qc.ca/netbeansday/) - Montréal, Canada
 
 ## 2017
 
 * 2017-10-28 - Do you know your mocks? - [Madras JUG](https://www.meetup.com/MadrasJUG) - Chennai, India
 * 2017-10-01 - Be pragmatic - [JavaOne](https://www.oracle.com/code-one/index.html) - San Francisco, USA
+* 2017-07-17 - Unconference - [JCrete](http://www.jcrete.org/) - Crete, Greece 
 * 2017-02-24 - Lambdas and generics survival guide - [DevNexus](https://devnexus.com/) - Atlanta, USA
 * 2017-02-11 - Generics and lambdas from the group up - [Bangalore Distributed System's Meetup](https://www.meetup.com/Bangalore-Distributed-Systems-Meetup) - Bangalore, India
 
