@@ -37,7 +37,7 @@ Then my personal list (I haven't tried everything. It's just a list of cool stuf
 
 * [Blue-Bot](https://www.bee-bot.us/bluebot.html): A cute mouse that can be programmed directly or from a tablet to follow a path
 * [Code & Go Robot mouse](https://www.learningresources.com/product/learning+essentials--8482-+stem+robot+mouse+coding+activity+set.do): Similar to Blue-Bot but comes with tiles and obstacles. The mouse can't be programmed from a tablet. There are cards to tell the path and it recognizes a cheese at the end. Pretty fun
-* [mBot](http://www.makeblock.cc/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
+* [mBot](https://www.makeblock.com/steam-kits/mbot): Little robot on wheels that you can program using Scratch. Uses a bit too much batteries and in fact can't do much
 
 # Programming
 
