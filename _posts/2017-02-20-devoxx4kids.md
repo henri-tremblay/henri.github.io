@@ -49,7 +49,7 @@ Then my personal list (I haven't tried everything. It's just a list of cool stuf
 # Construction
 
 * [LEGO Mindstroms](https://www.lego.com/en-us/mindstorms): Lego with captors and engines that you can problem using their interface. Quite complex to create models 
-* [LEGO WeDo](https://education.lego.com/en-us/products/lego-education-wedo-construction-set/9580): Like Mindstorms but simpler and for younger kids. They a quick to build and oriented for science workshops
+* [LEGO WeDo](https://education.lego.com/en-us/products/lego-education-wedo-2-0-core-set/45300): Like Mindstorms but simpler and for younger kids. They a quick to build and oriented for science workshops
 * [LEGO Boost](https://www.lego.com/en-us/boost): A bit like WeDo but for home. Boost is long to assemble and then offers many programming possibilities  
 
 # Computers
