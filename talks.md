@@ -7,6 +7,10 @@ The talks I've made along the years.
 
 ## 2018
 
+* 2018-08-04 - Learn Java 8: Lambdas and Functional Programming - [LAOUC](http://www.laouc.org) - Sao Paulo, Brazil
+* 2018-08-04 - Be pragmatic - [LAOUC](http://www.laouc.org) - Santiago, Chile
+* 2018-08-02 - Learn Java 8: Lambdas and Functional Programming - [LAOUC](http://www.laouc.org) - Sao Paulo, Brazil
+* 2018-08-02 - Be pragmatic - [LAOUC](http://www.laouc.org) - Santiago, Chile
 * 2018-07-23 - Unconference - [JCrete](http://www.jcrete.org/) - Crete, Greece
 * 2018-06-21 - Learn Java 8: Lambdas and Functional Programming - [Oracle Code Brasil](https://www.oracle.com/br/openworld/programs/oracle-code.html) - Sao Paulo, Brasil
 * 2018-03-08 - Être pragmatique - [Confoo](https://confoo.ca) - Montréal, Canada
