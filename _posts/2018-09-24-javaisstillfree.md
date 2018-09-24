@@ -7,7 +7,7 @@ tags:
 - Stories
 ---
 
-About a month ago, I was preparing my [OracleOne talk](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=henri) and 
+About a month ago, I was preparing my [OracleOne talk](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=%22henri%20tremblay%22) and 
 tripped on a slide. I was trying to explain the new delivery process and how long the support of each version will last. 
 
 It wasn't that clear at all.
@@ -15,7 +15,7 @@ It wasn't that clear at all.
 So, I asked my felow [Java Champions](https://community.oracle.com/community/technology_network_community/java/java-champions)
 about it. It triggered a discussion about the fact that it is indeed quite misunderstood.
 
-We got together. Or to be honest, [Martijn]()https://twitter.com/karianna) led the way and wrote an article to clarify the situation.
+We got together. Or to be honest, [Martijn](https://twitter.com/karianna) led the way and wrote an article to clarify the situation.
 We then made multiple suggestions and corrections. Representatives of the main OpenJDK providers were also
 involved. 
  
