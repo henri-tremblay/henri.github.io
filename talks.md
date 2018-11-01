@@ -7,6 +7,8 @@ The talks I've made along the years.
 
 ## 2018
 
+* 2018-10-23 - Caching still matters - [Oracle Code One](https://www.oracle.com/code-one/index.html) - San Francisco, USA
+* 2018-10-23 - Java 5,6,7,8,9,10,11: What did you miss? - [Oracle Code One](https://www.oracle.com/code-one/index.html) - San Francisco, USA
 * 2018-08-04 - Learn Java 8: Lambdas and Functional Programming - [LAOUC](http://www.laouc.org) - Sao Paulo, Brazil
 * 2018-08-04 - Be pragmatic - [LAOUC](http://www.laouc.org) - Santiago, Chile
 * 2018-08-02 - Learn Java 8: Lambdas and Functional Programming - [LAOUC](http://www.laouc.org) - Sao Paulo, Brazil
