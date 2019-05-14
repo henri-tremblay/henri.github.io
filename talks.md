@@ -5,6 +5,14 @@ title: Talks
 
 The talks I've made along the years.
 
+## 2019
+
+* 2019-04-02 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2019-03-15 - Java 9: Les modules, comment ça marche? - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2019-03-13 - Java 5, 6, 7, 8, 9, 10, 11, 12: Qu'avez-vous manqué? - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2019-03-01 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2019-01-16 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+
 ## 2018
 
 * 2018-10-23 - Caching still matters - [Oracle Code One](https://www.oracle.com/code-one/index.html) - San Francisco, USA
