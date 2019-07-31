@@ -17,7 +17,7 @@ Why were we doing that?
 
 Two reasons. A bad and a good one.
 
-# The bad reason is decoupling
+## The bad reason is decoupling
 
 The idea was that if you depend on an interface you can swap the implementation if ever needed.
 
@@ -142,7 +142,7 @@ Turning a class into an interface "later" wasn't painful after all.
 Which is why I call it a bad reason. 
 Doing it is painful now and has no benefit later.
 
-# Now, the good reason: Testing
+## Now, the good reason: Testing
 
 The problem with a concrete class is that you need to instantiate.
 In a testing context, you want to mock dependencies.
