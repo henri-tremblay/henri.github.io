@@ -7,6 +7,8 @@ The talks I've made along the years.
 
 ## 2019
 
+* 2019-08-02 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2019-07-15 - Unconference - [JCrete](http://www.jcrete.org/) - Crete, Greece
 * 2019-05-30 - Comprendre la visibilité des données en Java - [Montréal JUG](http://www.montreal-jug.org) - Montréal, Canada
 * 2019-04-02 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2019-03-15 - Java 9: Les modules, comment ça marche? - [Confoo](https://confoo.ca) - Montréal, Canada
