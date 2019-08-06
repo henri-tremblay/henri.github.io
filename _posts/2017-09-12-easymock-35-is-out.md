@@ -10,8 +10,6 @@ tags:
 Here is the long awaited 3.5 version. It contains many bug fixes and some improvement. We allowed ourselves to possibly break
 the compatibility with older versions for the greater good. So please read these notes thoroughly.
 
-Release notes
--------------
 * Java 5 is no longer supported. I dearly hope this won't harm anyone
 * Java 9 is supported
 * TestNG support is added. Have a look at `EasyMockListener`
@@ -22,7 +20,7 @@ what you want but you can use `verifyRecording()` to bring back the old behavior
 allow you to remove tons of `aryEq` all over your code. If you don't like it, you can specify `eq` explicitly for the array
 argument
 
-Change log
+Change log for Version 3.5 (2017-09-12)
 ----------
 * isNull and notNull with generic class parameter ([#93](https://github.com/easymock/easymock/issues/93))
 * Return a meaningful error when null on a primitive ([#92](https://github.com/easymock/easymock/issues/92))
