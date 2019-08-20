@@ -164,7 +164,7 @@ You just need to sneak under the hood a little.
 
 Originally, I got involved in open source to solve that problem specifically.
 Most mocking framework today are using [Objenesis](http://objenesis.org/) to perform this task.
-I talked a bit about it in a [previous post](({{ site.baseurl }}{% post_url 2015-02-17-the-history-of-partial-mocking %}). 
+I talked a bit about it in a [previous post]({{ site.baseurl }}{% post_url 2015-02-17-the-history-of-partial-mocking %}). 
 
 So, since 2003, you don't need to be afraid to use concrete classes as dependencies.
 You can mock them just as any interface.
