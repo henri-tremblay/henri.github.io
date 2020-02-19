@@ -22,7 +22,7 @@ So, Objenesis source code was originally on Google Code. I've moved it to GitHub
 requests are awesome. The website is also a GitHub page. Part of the documentation is on Google Code wiki, the binaries 
 are on Google Code as well as the issue tracker.
 
-Google being nice folks, they used to provide a [nice way](https://code.google.com/export-to-github) to migrate everything 
+Google being nice folks, they used to provide a nice way (https://code.google.com/export-to-github, now down) to migrate everything 
 to GitHub. But I couldn't use that because
 
 * I don't want the project to end up in `henri-tremblay/objenesis`. I want it where it is now, in the
