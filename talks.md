@@ -5,8 +5,16 @@ title: Talks
 
 The talks I've made along the years.
 
+## 2020
+
+* 2020-02-27 - L'histoire de la programmation parallèle - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2020-02-20 - Discover Modern Java- [DevNexus](https://devnexus.com/) - Atlanta, USA
+* 2020-01-08 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2020-01-10 - This stupid multi-thread code isn’t working. I hate Java! - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
+
 ## 2019
 
+* 2019-11-05 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2019-08-02 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2019-07-15 - Unconference - [JCrete](http://www.jcrete.org/) - Crete, Greece
 * 2019-05-30 - Comprendre la visibilité des données en Java - [Montréal JUG](http://www.montreal-jug.org) - Montréal, Canada
@@ -15,6 +23,7 @@ The talks I've made along the years.
 * 2019-03-13 - Java 5, 6, 7, 8, 9, 10, 11, 12: Qu'avez-vous manqué? - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2019-03-01 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2019-01-16 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2019-01-11 - Java 5,6,7,8,9,10,11,12: The useful tricks you missed - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
 
 ## 2018
 
