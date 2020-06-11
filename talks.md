@@ -7,6 +7,8 @@ The talks I've made along the years.
 
 ## 2020
 
+* 2020-06-04 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2020-03-18 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2020-02-27 - L'histoire de la programmation parallèle - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2020-02-20 - Discover Modern Java- [DevNexus](https://devnexus.com/) - Atlanta, USA
 * 2020-01-08 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
