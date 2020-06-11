@@ -1,7 +1,7 @@
 language: ruby
 sudo: false
 rvm:
-  - 2.4
+  - 2.5.8
 script:
   - bundle exec jekyll build
   # Oracle tends to return a 403 so we ignore it
