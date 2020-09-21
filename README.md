@@ -26,3 +26,11 @@ bundle update
 # Developer stuff
 
 [All highlighted languages](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml)
+
+# Useful jekyll
+
+## Link to another post
+
+```markdown
+[The text]({% post_url 2017-06-20-objenesis-26-is-out %}) 
+```
