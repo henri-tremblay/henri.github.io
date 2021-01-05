@@ -12,7 +12,7 @@ tripped on a slide. I was trying to explain the new delivery process and how lon
 
 It wasn't that clear at all.
 
-So, I asked my fellow [Java Champions](https://community.oracle.com/community/technology_network_community/java/java-champions)
+So, I asked my fellow [Java Champions](https://github.com/aalmiray/java-champions)
 about it. It triggered a discussion about the fact that it is indeed quite misunderstood.
 
 We got together. Or to be honest, [Martijn](https://twitter.com/karianna) led the way and wrote an article to clarify the situation.
