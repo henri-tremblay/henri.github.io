@@ -1,11 +1,11 @@
 language: ruby
 sudo: false
 rvm:
-  - 2.5.8
+  - 2.7.1
 script:
   - bundle exec jekyll build
   # Oracle tends to return a 403 so we ignore it
-  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore --url-ignore "/oracle.com/"
+  - bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html --url-ignore "/oracle.com/" --url-ignore "/twitter.com/"
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
