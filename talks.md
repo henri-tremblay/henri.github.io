@@ -7,6 +7,8 @@ The talks I've made along the years.
 
 ## 2020
 
+* 2020-12-17 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2020-10-06 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2020-08-13 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2020-06-04 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2020-03-18 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
