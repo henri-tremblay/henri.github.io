@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Mocking Clock
+title: Mocking Time
 date: '2021-01-12T01:00:00.000-08:00'
 author: Henri Tremblay
 tags:
@@ -59,26 +59,30 @@ Here is an implementation.
 ```java
 public class MutableClock extends Clock {
 
-    private final ZonedDateTime today;
+  private volatile ZonedDateTime today;
 
-    public MutableClock(ZonedDateTime today) {
-        this.today = today;
-    }
-    
-    @Override
-    public ZoneId getZone() {
-        return today.getZone();
-    }
+  public MutableClock(ZonedDateTime today) {
+    this.today = today;
+  }
 
-    @Override
-    public Clock withZone(ZoneId zone) {
-        return new MutableClock(today.withZoneSameInstant(zone));
-    }
+  @Override
+  public ZoneId getZone() {
+    return today.getZone();
+  }
 
-    @Override
-    public Instant instant() {
-        return today.toInstant();
-    }
+  @Override
+  public Clock withZone(ZoneId zone) {
+    return new MutableClock(today.withZoneSameInstant(zone));
+  }
+
+  @Override
+  public Instant instant() {
+    return today.toInstant();
+  }
+
+  public synchronized void addSeconds(int seconds) {
+    today = today.plusSeconds(seconds);
+  }
 }
 ```
 
