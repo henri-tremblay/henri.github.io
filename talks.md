@@ -5,6 +5,11 @@ title: Talks
 
 The talks I've made along the years.
 
+## 2021
+
+* 2020-01-15 - This stupid multi-threaded code isn’t working. I hate Java! - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Online
+* 2021-01-14 - [Refactor Together](https://youtu.be/hTnrEepswjc) - [jChampions Conference](https://jchampionsconf.com/) - Online
+
 ## 2020
 
 * 2020-12-17 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
