@@ -7,8 +7,9 @@ The talks I've made along the years.
 
 ## 2021
 
-* 2020-02-24 - Chu tanné du multi-fil. Ça marche pas! J'haïe Java! - [Confoo](https://confoo.ca/fr) - Online
-* 2020-01-15 - This stupid multi-threaded code isn’t working. I hate Java! - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Online
+* 2021-04-07 - Hors du cadre - [COMAQ Accent TI](http://www.comaq.qc.ca/journeesti/liste) - Online
+* 2021-02-24 - Chu tanné du multi-fil. Ça marche pas! J'haïe Java! - [Confoo](https://confoo.ca/fr) - Online
+* 2021-01-15 - This stupid multi-threaded code isn’t working. I hate Java! - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Online
 * 2021-01-14 - [Refactor Together](https://youtu.be/hTnrEepswjc) - [jChampions Conference](https://jchampionsconf.com/) - Online
 
 ## 2020
