@@ -6,6 +6,11 @@ author: Henri Tremblay
 tags:
 - What I learned today
 ---
+
+**Update (2021-04-19):** It's a JDK bug. It was [fixed](https://bugs.openjdk.java.net/browse/JDK-8194154) in Java 11.
+You can't change `user.dir` anymore (see [this](https://bugs.openjdk.java.net/browse/JDK-8066709)).
+But the behavior is consistent, `user.dir` is cached at the beginning. 
+
 I was playing with system properties lately.
 My goal was to change the current directory.
 The theory would be that the following code should do it.
