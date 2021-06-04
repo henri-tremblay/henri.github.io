@@ -40,7 +40,8 @@ validation-report.json
 w3cErrors
 
 # Folders to ignore
-node_modules
+/node_modules
+/w3cErrors
 
 # Ruby stuff
 .bundle/
