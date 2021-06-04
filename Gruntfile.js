@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = function (grunt) {
-  grunt.loadNpmTasks('grunt-w3c-html-validation                                                                                                                               ');
+  grunt.loadNpmTasks('grunt-w3c-html-validation');
 
   grunt.initConfig({
     validation: {
