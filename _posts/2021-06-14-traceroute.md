@@ -7,7 +7,7 @@ tags:
 - What I learned today
 ---
 
-I'm not the best at diagnosing network issue.
+I'm not the best at diagnosing network issues.
 
 Yes, in 99% of the cases, you think the problem is the network and it's not.
 But in rare cases it actually is.
@@ -18,4 +18,4 @@ He also happens to have founded a startup named [Okio](https://obkio.com/) doing
 Read it, I have learned tons of things from it.
 
 Full disclosure: In case of doubt, I have no interest in this company. 
-I do think that have a great product and that the guide is a fabulous piece of work.
+I do think they have a great product and that the guide is a fabulous piece of work.
