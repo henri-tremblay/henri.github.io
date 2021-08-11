@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Description for blog",
   "devDependencies": {
-    "grunt": "1.4.0",
+    "grunt": "1.4.1",
     "grunt-w3c-html-validation": "^0.1.9"
   },
   "engines": {
