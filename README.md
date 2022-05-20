@@ -1,4 +1,4 @@
-Blog published at http://blog.tremblay.pro
+Blog published at https://blog.tremblay.pro.
 
 # Local installation
 
@@ -12,6 +12,13 @@ bundle exec jekyll server -w
 ```shell script
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --only-4xx --check-favicon --check-html
+```
+
+## Grunt w3c validation
+
+```
+npm install
+grunt
 ```
 
 ## Upgrade dependencies
