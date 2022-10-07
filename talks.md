@@ -5,9 +5,25 @@ title: Talks
 
 The talks I've made along the years.
 
+## 2022
+
+* 2022-12-09 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2022-10-20 - Beyond Java 8: The Cool Stuff - [JavaOne](https://www.oracle.com/cloudworld/javaone/) - Las Vegas, USA
+* 2022-10-14 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2022-08-26 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2022-06-03 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2022-04-07 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2022-10-06 - Working in IT: My 2 cents - Dawson College
+* 2022-02-23 - Refactoring: L'essentiel - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2022-02-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+
 ## 2021
 
+* 2021-12-03 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2021-10-01 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2021-07-08 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2021-04-07 - Hors du cadre - [COMAQ Accent TI](http://www.comaq.qc.ca/journeesti/liste) - Online
+* 2021-03-18 - Discovering Modern Java - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2021-02-24 - Chu tanné du multi-fil. Ça marche pas! J'haïe Java! - [Confoo](https://confoo.ca/fr) - Online
 * 2021-01-15 - This stupid multi-threaded code isn’t working. I hate Java! - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Online
 * 2021-01-14 - [Refactor Together](https://youtu.be/hTnrEepswjc) - [jChampions Conference](https://jchampionsconf.com/) - Online
