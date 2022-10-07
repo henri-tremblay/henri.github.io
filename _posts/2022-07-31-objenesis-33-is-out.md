@@ -7,7 +7,7 @@ tags:
 - Projects
 ---
 
-Support of Java 18 confirmes.
+Support of Java 18 confirmed.
 
 Change log for Version 3.3 (2022-08-01)
 -----------------------------------------
