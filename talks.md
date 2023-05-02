@@ -7,6 +7,7 @@ The talks I've made along the years.
 
 ## 2023
 
+* 2022-05-03 - After Java 8: The cool stuff - [jconftoronto](https://2023.jconftoronto.dev/) - Toronto, Canada
 * 2022-04-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2022-03-24 - After Java 8: The cool stuff - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
 * 2022-02-22 - After Java 8: The cool stuff - [Confoo](https://confoo.ca) - Montréal, Canada
