@@ -7,11 +7,14 @@ The talks I've made along the years.
 
 ## 2023
 
-* 2022-05-03 - After Java 8: The cool stuff - [jconftoronto](https://2023.jconftoronto.dev/) - Toronto, Canada
-* 2022-04-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
-* 2022-03-24 - After Java 8: The cool stuff - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
-* 2022-02-22 - After Java 8: The cool stuff - [Confoo](https://confoo.ca) - Montréal, Canada
-* 2021-01-23 - [Beyond Java 8: The cool stuff](https://www.youtube.com/watch?v=5AexTfwCtDY) - [jChampions Conference](https://jchampionsconf.com/) - Online
+* 2023-09-26 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2023-09-11 - Soirée Java 21 - [Montréal JUG](http://www.montreal-jug.org) - Montréal, Canada
+* 2023-06-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2023-05-03 - After Java 8: The cool stuff - [jconftoronto](https://2023.jconftoronto.dev/) - Toronto, Canada
+* 2023-04-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2023-03-24 - After Java 8: The cool stuff - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
+* 2023-02-22 - After Java 8: The cool stuff - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2023-01-23 - [Beyond Java 8: The cool stuff](https://www.youtube.com/watch?v=5AexTfwCtDY) - [jChampions Conference](https://jchampionsconf.com/) - Online
 
 ## 2022
 
