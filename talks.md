@@ -8,6 +8,7 @@ The talks I've made along the years.
 ## 2023
 
 * 2023-09-26 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2023-09-25 - A brief history of programming languages...and Java 21 -  - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
 * 2023-09-11 - Soirée Java 21 - [Montréal JUG](http://www.montreal-jug.org) - Montréal, Canada
 * 2023-06-11 - Java 9 to 17: The New Feature Benefits - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2023-05-03 - After Java 8: The cool stuff - [jconftoronto](https://2023.jconftoronto.dev/) - Toronto, Canada
