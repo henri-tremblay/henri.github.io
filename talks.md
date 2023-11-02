@@ -7,6 +7,7 @@ The talks I've made along the years.
 
 ## 2023
 
+* 2023-10-05 - Java 21: C'est maintenant - [Ossia Conseil](https://www.ossia-conseil.com/) - Online
 * 2023-09-26 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2023-09-25 - A brief history of programming languages...and Java 21 -  - [Dawscon](https://www.dawsoncollege.qc.ca/dawscon/) - Montréal, Canada
 * 2023-09-11 - Soirée Java 21 - [Montréal JUG](http://www.montreal-jug.org) - Montréal, Canada
