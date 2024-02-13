@@ -16,7 +16,7 @@ lock and synchronization. Just data visibility.
 
 > If I write to this variable, will this other thread see the new value for sure?
 
-I was lucky enough to gather with a handful of subject matter experts.
+I was lucky enough to gather with a handful of subject-matter experts.
 
 My goal was to give really simple examples of what works or not. The final code can be found on 
 [JCrete's github](https://github.com/JCrete/jcrete2017/tree/master/Day1/Session2/DataVisibility).
@@ -44,7 +44,28 @@ JVM version and the way the wind is blowing, it might see the value correctly on
 
 I recommend that you first guess the result before looking at the answer.
 
-The first example is a normal field (no final or volatile) without any kind of synchronization.
+The first example is when we just flip the field in same thread.
+
+{% highlight java %}
+@Test
+public void test() {
+    new Thread(() -> {
+        field = true;
+        while (!field);
+        System.out.println("Done");
+    }).start();
+}
+{% endhighlight %}
+
+**Does it work:** Yes
+
+We will call this one the obvious example because it obviously works.
+But, even if it's obvious, the JMM still have a rule for it.
+
+    Each action in a thread happens-before every subsequent action in that thread.
+
+Let's move to something less obvious.
+We will start with a normal field (no final or volatile) without any kind of synchronization.
 
 {% highlight java %}
 private boolean stopNormalField;
@@ -80,8 +101,22 @@ public void volatileField() {
 
 **Does it work:** Yes
 
-Volatile ensure data visibility. When a volatile field is changed, all other threads are seeing the value right away. Volatile tells the JVM 
-that the value shouldn't be kept local to the thread.
+Volatile ensure data visibility. 
+
+    A write to a volatile field happens-before every subsequent read of that volatile.
+
+When a volatile field is changed, all other threads are seeing the value right away. 
+Volatile tells the JVM that the value shouldn't be kept local to the thread.
+
+*Happens-before* is JMM jargon. 
+It has a strict definition. 
+That means what it means in English. 
+That you are sure something happened before something else.
+
+So, in the JMM jargon, a volatile write _happens-before_ any subsequent read of the volatile field.
+
+The volatile also has the added bonus of ensuring the atomicity of the update.
+It means the value is updated in one shot. No half-written value.
 
 So far so good.
 
@@ -149,8 +184,12 @@ public void synchronizedField() {
 
 **Does it work:** Yes
 
-Two threads synchronizing on the **same** mutex are seeing the same thing **inside** the synchronized section. All words in bold are really 
-important.
+JMM says:
+
+    An unlock on a monitor happens-before every subsequent lock on that monitor.
+
+Which means two threads synchronizing on the **same** mutex are seeing the same thing **inside** the synchronized section. 
+All words in bold are really important.
 
 For instance, not synchronizing on the same mutex means all bets are off.
 
@@ -258,11 +297,61 @@ public void latchField() {
 
 **Does it work:** Yes
 
-As soon as you use JUC abstractions, things tend to magically work in fact. Which is a good thing even though everything *magically* working 
-is always a bit frightening.
+As soon as you use JUC abstractions, things tend to magically work in fact. 
+Which is a good thing even though everything *magically* working is always a bit frightening.
 
-OK. We will finish this post with the *Don't do this at home* example. It means it is trickier to get right and you won't need it for business 
-as usual.
+Now, something strange when asked.
+
+{% highlight java %}
+@Test
+public void setBeforeThreadField() {
+    stopNormalField = true;
+    new Thread(() -> {
+        while (!stopNormalField);
+        System.out.println("Done");
+    }).start();
+}
+{% endhighlight %}
+
+We set the normal field before starting the thread.
+
+**Does it work:** Yes
+
+That one, you probably guessed right.
+Because if it was not working, it would mean that the thread would never see the value of a field set before it started.
+But of course there's a rule for that.
+
+    A call to start() on a thread happens-before any actions in the started thread.
+
+What about this one?
+
+{% highlight java %}
+@Test
+public void joinThread() throws InterruptedException {
+    stopNormalField = true;
+    Thread t = new Thread(() -> {
+        while (!stopNormalField); 
+        System.out.println("Done");
+        stopNormalField = false;
+    });
+    t.start();
+    t.join();
+    System.out.println(stopNormalField);
+}
+{% endhighlight %}
+
+It's a bit different because we are wondering if the main thread will see the value set by the child thread after the join.
+
+**Does it work:** Yes
+
+Why? Because the JMM says so, of course.
+
+    All actions in a thread happen-before any other thread successfully returns from a join() on that thread.
+
+Quite useful.
+
+OK. We will finish this post with the *Don't do this at home* example. 
+It means it is trickier to get right, and you won't need it for business as usual.
 
 {% highlight java %}
 @Test
@@ -279,9 +368,12 @@ public void mutexField() {
 
 **Does it work:** Yes
 
-Here we cause the synchronization of the normal field by using a volatile field. Writing to `stopVolatileField` causes a *happens-before* 
-relationship. *Happens-before* is JMM jargon. It has a script definition. That means what it means in English. That you are sure something 
-happened before. In our case, it means the value written to `stopNormalField` will be seen by the child thread after it reads `stopVolatileField`.
+Here we cause the synchronization of the normal field by using a volatile field. 
+Writing to `stopVolatileField` causes a *happens-before* relationship. 
+And *happens-before* are transitive as per the JMM.
 
-Thanks again to all the contributors to this session (you will find some of them on the 
-[readme](https://github.com/JCrete/jcrete2017/blob/master/Day1/Session2/DataVisibility/README.adoc). 
+    If an action a happens-before an action b, and b happens before an action c, then a happens before c.
+
+In our case, it means the value written to `stopNormalField` will be seen by the child thread after it reads `stopVolatileField`.
+
+Thanks again to all the contributors to this session (you will find some of them on the [readme](https://github.com/JCrete/jcrete2017/blob/master/Day1/Session2/DataVisibility/README.adoc). 
