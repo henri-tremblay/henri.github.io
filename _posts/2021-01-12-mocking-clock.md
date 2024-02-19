@@ -59,35 +59,44 @@ Here is an implementation.
 ```java
 public class MutableClock extends Clock {
 
-  private volatile ZonedDateTime today;
+  private volatile Instant now;
+  private final ZoneId zone;
 
-  public MutableClock(ZonedDateTime today) {
-    this.today = today;
+  public MutableClock() {
+    this(Instant.now());
+  }
+  
+  public MutableClock(Instant now) {
+    this(now, ZoneId.systemDefault());
+  }
+
+  public MutableClock(Instant now, ZoneId zone) {
+    this.now = now;
+    this.zone = zone;
   }
 
   @Override
   public ZoneId getZone() {
-    return today.getZone();
+    return zone;
   }
 
   @Override
   public Clock withZone(ZoneId zone) {
-    return new MutableClock(today.withZoneSameInstant(zone));
+    return new MutableClock(now, zone);
   }
 
   @Override
   public Instant instant() {
-    return today.toInstant();
+    return now;
   }
 
-  public synchronized void addSeconds(int seconds) {
-    today = today.plusSeconds(seconds);
+  public synchronized void plus(TemporalAmount amount) {
+    now = now.plus(amount);
   }
 }
 ```
 
-I found it a really useful tool to fix existing code.
-In a class where you want the time to move at your own pace.
+I found it a really useful tool to fix existing code in a class where you want the time to move at your own pace.
 
 * Add a Clock attribute
 * Add a constructor taking the clock in parameter
