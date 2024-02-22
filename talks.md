@@ -7,6 +7,8 @@ The talks I've made along the years.
 
 ## 2024
 
+* 2024-02-23 - L'histoire de la programmation parallèle en Java - [Confoo](https://confoo.ca) - Montréal, Canada
+* 2024-02-21 - Java 21: La version que vous devriez utiliser (LTS) - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2024-02-08 - Data visibility - [Ossia Conseil](https://www.ossia-conseil.com/) - Online
 * 2024-01-16 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 
