@@ -7,6 +7,9 @@ The talks I've made along the years.
 
 ## 2024
 
+* 2024-07-12 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2024-05-10 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
+* 2024-03-19 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
 * 2024-02-23 - L'histoire de la programmation parallèle en Java - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2024-02-21 - Java 21: La version que vous devriez utiliser (LTS) - [Confoo](https://confoo.ca) - Montréal, Canada
 * 2024-01-16 - Java 9 to 21: How to code like a pro - [O'Reilly Training](https://www.oreilly.com/live-training/) - Online
